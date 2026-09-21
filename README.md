@@ -46,6 +46,7 @@ sudo pacman -S base-devel nasm qemu-system-x86 lib32-glibc
 
 ```text
 .
+├── LICENSE           # GPLv3 license
 ├── Makefile          # Build recipes and QEMU run targets
 ├── README.md         # Documentation
 ├── boot.asm          # 16-bit Real Mode MBR bootloader + GDT setup
