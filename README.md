@@ -49,8 +49,8 @@ sudo pacman -S base-devel nasm qemu-system-x86 lib32-glibc
 ├── Makefile          # Build recipes and QEMU run targets
 ├── README.md         # Documentation
 ├── boot.asm          # 16-bit Real Mode MBR bootloader + GDT setup
-├── kernel_entry.asm  # 32-bit assembly wrapper calling C main()
 ├── kernel.c          # Freestanding C kernel drawing to VGA buffer
+├── kernel_entry.asm  # 32-bit assembly wrapper calling C main()
 └── linker.ld         # Linker script mapping kernel code to 0x1000
 ```
 
