@@ -18,7 +18,7 @@ ASFLAGS := -f elf32
 
 BUILD_DIR := build
 
-TARGET_IMG := $(BUILD_DIR)/0x700.img
+TARGET_IMG := $(BUILD_DIR)/0x7C00.img
 BOOT_BIN   := $(BUILD_DIR)/boot.bin
 KERNEL_BIN := $(BUILD_DIR)/kernel.bin
 KERNEL_OBJS := $(BUILD_DIR)/kernel_entry.o $(BUILD_DIR)/kernel.o
