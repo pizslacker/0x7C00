@@ -72,7 +72,7 @@ build/0x7C00.img (Final bootable disk image padded to 8 KB)
 ```
 
 2. Run with QEMU
-3. 
+
 Launch the image inside a virtual x86 environment:
 
 ```Bash
@@ -80,7 +80,7 @@ make run
 ```
 
 3. Debug with GDB
-4. 
+
 To pause the CPU at the reset vector (0xFFF0 / 0x7C00) and attach GDB:
 
 ```Bash
