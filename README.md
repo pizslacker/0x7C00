@@ -23,7 +23,26 @@ A bare-metal `x86` bootloader and minimal `C` kernel demonstration built from sc
 
 ---
 
-## Directory Structure
+### Prerequisites
+To build and run the project, ensure you have an x86 toolchain and QEMU installed:
+
+#### Debian / Ubuntu / Linux Mint
+```Bash
+sudo apt update
+sudo apt install build-essential nasm qemu-system-x86 gcc-multilib
+```
+
+#### Fedora / RHEL / AlmaLinux
+```Bash
+sudo dnf install gcc nasm qemu-system-x86 glibc-devel.i686
+```
+
+#### Arch Linux
+```Bash
+sudo pacman -S base-devel nasm qemu-system-x86 lib32-glibc
+```
+
+#### Directory Structure
 
 ```text
 .
@@ -33,3 +52,8 @@ A bare-metal `x86` bootloader and minimal `C` kernel demonstration built from sc
 ├── kernel_entry.asm  # 32-bit assembly wrapper calling C main()
 ├── kernel.c          # Freestanding C kernel drawing to VGA buffer
 └── linker.ld         # Linker script mapping kernel code to 0x1000
+```
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 (GPLv3). See the [LICENSE](LICENSE) file for the full license text.
