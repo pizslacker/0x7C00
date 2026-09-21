@@ -9,7 +9,7 @@ A bare-metal `x86` bootloader and minimal `C` kernel demonstration built from sc
 ## Features
 
 - **Custom MBR Bootloader (`boot.asm`)**:
-  - Initializes segments and stack in 16-bit Real Mode.
+  - Initializes segments, registers, and the stack at [`0x7C00`](https://stackoverflow.com/questions/51995987/bios-and-address-0x07c00).
   - Issues BIOS disk interrupt `INT 0x13, AH=0x02` to load raw kernel sectors into RAM at physical address `0x1000`.
   - Configures a basic Global Descriptor Table (GDT) defining flat 4GB code and data segments.
   - Sets the `PE` (Protection Enable) bit in `CR0` and performs a far jump to flush the pipeline and transition to 32-bit Protected Mode.
