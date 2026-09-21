@@ -23,7 +23,26 @@ A bare-metal `x86` bootloader and minimal `C` kernel demonstration built from sc
 
 ---
 
-## Directory Structure
+### Prerequisites
+To build and run the project, ensure you have an x86 toolchain and QEMU installed:
+
+#### Debian / Ubuntu / Linux Mint
+```Bash
+sudo apt update
+sudo apt install build-essential nasm qemu-system-x86 gcc-multilib
+```
+
+#### Fedora / RHEL / AlmaLinux
+```Bash
+sudo dnf install gcc nasm qemu-system-x86 glibc-devel.i686
+```
+
+#### Arch Linux
+```Bash
+sudo pacman -S base-devel nasm qemu-system-x86 lib32-glibc
+```
+
+#### Directory Structure
 
 ```text
 .
