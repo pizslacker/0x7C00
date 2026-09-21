@@ -52,3 +52,8 @@ sudo pacman -S base-devel nasm qemu-system-x86 lib32-glibc
 ├── kernel_entry.asm  # 32-bit assembly wrapper calling C main()
 ├── kernel.c          # Freestanding C kernel drawing to VGA buffer
 └── linker.ld         # Linker script mapping kernel code to 0x1000
+```
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 (GPLv3). See the [LICENSE](LICENSE) file for the full license text.
