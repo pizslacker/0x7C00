@@ -54,6 +54,17 @@ sudo pacman -S base-devel nasm qemu-system-x86 lib32-glibc
 └── linker.ld         # Linker script mapping kernel code to 0x1000
 ```
 
+### Memory Map
+
+|Address Range | Description |
+|--------------|-------------------------------------------------|
+| 0x00000 - 0x003FF | Real Mode Interrupt Vector Table (IVT) |
+| 0x00400 - 0x004FF | BIOS Data Area (BDA) |
+| 0x01000 - 0x07BFF | Loaded Kernel Code & Data (kernel.bin) |
+| 0x07C00 - 0x07DFF | MBR Bootloader Sector (boot.bin) |
+| 0x07E00 - 0x8FFFF § Usable Low RAM / Initial Stack Region |
+| 0xB8000 - 0xB8FA0 § VGA Color Text Mode Buffer (80x25 characters) |
+
 ### Building and Running
 1. Compile and Link
 Build the bootloader, compile the kernel, link them to flat binaries, and combine them into a bootable image:
