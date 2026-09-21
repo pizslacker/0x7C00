@@ -54,6 +54,48 @@ sudo pacman -S base-devel nasm qemu-system-x86 lib32-glibc
 └── linker.ld         # Linker script mapping kernel code to 0x1000
 ```
 
+### Building and Running
+1. Compile and Link
+Build the bootloader, compile the kernel, link them to flat binaries, and combine them into a bootable image:
+
+```Bash
+make
+```
+
+Artifacts will be placed in the build/ directory:
+```text
+build/boot.bin (512 bytes with 0xAA55 signature)
+
+build/kernel.bin (Flat raw binary starting at 0x1000)
+
+build/0x7C00.img (Final bootable disk image padded to 8 KB)
+```
+
+2. Run with QEMU
+Launch the image inside a virtual x86 environment:
+
+```Bash
+make run
+```
+
+3. Debug with GDB
+To pause the CPU at the reset vector (0xFFF0 / 0x7C00) and attach GDB:
+
+```Bash
+make debug
+```
+
+In another terminal:
+
+```Bash
+gdb -ex "target remote localhost:1234" -ex "set architecture i8086"
+```
+
+4. Clean Build Artifacts
+```Bash
+make clean
+```
+
 ## License
 
 This project is licensed under the GNU General Public License v3.0 (GPLv3). See the [LICENSE](LICENSE) file for the full license text.
