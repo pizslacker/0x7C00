@@ -56,6 +56,7 @@ sudo pacman -S base-devel nasm qemu-system-x86 lib32-glibc
 
 ### Building and Running
 1. Compile and Link
+
 Build the bootloader, compile the kernel, link them to flat binaries, and combine them into a bootable image:
 
 ```Bash
