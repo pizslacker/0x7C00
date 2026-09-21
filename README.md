@@ -2,7 +2,7 @@
 
 A bare-metal `x86` bootloader and minimal `C` kernel demonstration built from scratch without external libraries or standard runtimes.
 
-**0x700** boots an x86 machine in 16-bit Real Mode via the Master Boot Record (MBR), loads a freestanding C kernel from disk into memory, transitions the CPU to 32-bit Protected Mode, and prints directly to the VGA text video memory (`0xB8000`).
+**0x700** boots an x86 machine in `16-bit Real Mode` via the `Master Boot Record` (`MBR`), loads a freestanding `C` kernel from disk into memory, transitions the CPU to `32-bit Protected Mode`, and prints directly to the VGA text video memory (`0xB8000`).
 
 ---
 
