@@ -211,7 +211,7 @@ void main(void) {
     clear_screen();
 
     print_str("0x7C00 Bootloader -> 32-Bit Protected Mode Active\n", WHITE_ON_BLACK);
-    print_str("-----------------------------------------------\n", WHITE_ON_BLACK);
+    print_str("-------------------------------------------------\n", WHITE_ON_BLACK);
 
     if (!check_cpuid_supported()) {
         print_str("CRITICAL: CPUID instruction not supported on this CPU!\n", RED_ON_BLACK);
