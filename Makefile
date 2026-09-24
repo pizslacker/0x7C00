@@ -61,7 +61,7 @@ $(KERNEL_BIN): $(KERNEL_OBJS) linker.ld
 # Execution & Emulation
 # -----------------------------------------------------------------------------
 run: $(TARGET_IMG)
-	$(QEMU) -drive format=raw,file=$(TARGET_IMG)
+	$(QEMU) -cpu host -enable-kvm -drive format=raw,file=$(TARGET_IMG)
 
 # Run with GDB debugging hooks (listens on localhost:1234, halted at start)
 debug: $(TARGET_IMG)
