@@ -1,5 +1,5 @@
 # ==============================================================================
-# SectorZero - Bare-Metal x86 Bootloader & Minimal C Kernel
+# 0x7C00 - Bare-Metal x86 Bootloader & Minimal C Kernel
 # ==============================================================================
 
 CC      := gcc
