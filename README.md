@@ -114,3 +114,5 @@ make clean
 ## License
 
 This project is licensed under the GNU General Public License v3.0 (GPLv3). See the [LICENSE](LICENSE) file for the full license text.
+
+Copyright (C) k!M/pizslacker 2026
