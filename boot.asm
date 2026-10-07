@@ -1,4 +1,4 @@
-; 0x7C00 - Bare-Metal x86 Bootloader & Minimal C Kernel
+; SectorZero - Bare-Metal x86 Bootloader & Minimal C Kernel
 ; Copyright (C) k!M/pizslacker 2026
 ;
 ; This program is free software: you can redistribute it and/or modify
