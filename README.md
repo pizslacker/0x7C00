@@ -1,4 +1,5 @@
-# **0x7C00:** The iconic BIOS load address
+# SectorZero
+### **0x7C00:** The iconic BIOS load address
 
 A bare-metal `x86` bootloader and minimal `C` kernel demonstration built from scratch without external libraries or standard runtimes.
 
